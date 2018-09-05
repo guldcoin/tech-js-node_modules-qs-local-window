@@ -1,6 +1,6 @@
 {
   "name": "qs-local-window",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get a variable from the cache, querystring, or localStorage. If present in querystring, sets the others.",
   "browser": "qs-local-window.js",
   "scripts": {
