@@ -5,24 +5,34 @@
   "browser": "qs-local-window.js",
   "scripts": {
     "lint": "eslint --env browser *.js*",
-    "fix": "eslint --fix *.js*"
+    "fix": "eslint --fix *.js*",
+    "test": "mocha test/*.js",
+    "test:lint": "npm run lint && npm run test",
+    "build": "webpack"
   },
   "keywords": [
     "localstorage",
-    "cache"
+    "cache",
+    "browser",
+    "guld"
   ],
   "author": "isysd",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^5.1.0",
+    "chai": "^4.1.2",
+    "eslint": "^5.5.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-es5": "^1.3.1",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-json": "^1.2.1",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.1.0",
-    "pre-commit": "^1.2.2"
+    "mocha": "^5.2.0",
+    "mochify": "^5.8.1",
+    "pre-commit": "^1.2.2",
+    "puppeteer": "^1.7.0",
+    "webpack": "^4.17.2"
   },
   "pre-commit": [
     "lint"
@@ -31,6 +41,10 @@
   "engines": {
     "node": ">=7"
   },
-  "homepage": "https://github.com/isysd/tech-js-node_modules-qs-local-window#readme",
-  "repository": "git@github.com:isysd/tech-js-node_modules-qs-local-window.git"
+  "homepage": "https://guld.tech/lib/qs-local-window.html",
+  "repository": "https://bitbucket.org/guld/tech-js-node_modules-qs-local-window",
+  "dependencies": {},
+  "eslintIgnore": [
+    "*.min.js"
+  ]
 }
